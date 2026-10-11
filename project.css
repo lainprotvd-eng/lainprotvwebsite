@@ -7,3 +7,5 @@
 @media(max-width:760px){.project-title:has(.project-logo){padding-right:0}.project-title h1.project-logo{max-width:340px;margin-bottom:20px}}
 
 .help-project .project-logo{aspect-ratio:1080/630!important}
+
+@media(max-width:760px){.gallery-many .gallery-dots{grid-template-columns:repeat(4,minmax(0,1fr))}}
