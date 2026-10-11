@@ -31,8 +31,10 @@
       const player = slide.querySelector('.video-player');
       if (!player) return;
       const frame = document.createElement('iframe');
-      frame.src = 'https://www.youtube-nocookie.com/embed/y2V9gzLIcWA?autoplay=1&rel=0';
-      frame.title = 'Ice Scream 1 — video by LainProTV';
+      const videoId = gallery.dataset.videoId || 'y2V9gzLIcWA';
+      if (!/^[A-Za-z0-9_-]{11}$/.test(videoId)) return;
+      frame.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
+      frame.title = gallery.dataset.videoTitle || 'Ice Scream 1 — video by LainProTV';
       frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
       frame.allowFullscreen = true;
       frame.referrerPolicy = 'strict-origin-when-cross-origin';
