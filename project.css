@@ -9,3 +9,5 @@
 .help-project .project-logo{aspect-ratio:1080/630!important}
 
 @media(max-width:760px){.gallery-many .gallery-dots{grid-template-columns:repeat(4,minmax(0,1fr))}}
+
+.project-release{display:block;margin-top:12px;font-size:13px;line-height:1.6;color:#b9c4d0}
